@@ -1,0 +1,11 @@
+/home/geoff/projects/newanumbers/newsnumbers/api/bin/Debug/netcoreapp2.0/api.deps.json
+/home/geoff/projects/newanumbers/newsnumbers/api/bin/Debug/netcoreapp2.0/api.runtimeconfig.json
+/home/geoff/projects/newanumbers/newsnumbers/api/bin/Debug/netcoreapp2.0/api.runtimeconfig.dev.json
+/home/geoff/projects/newanumbers/newsnumbers/api/bin/Debug/netcoreapp2.0/api.dll
+/home/geoff/projects/newanumbers/newsnumbers/api/bin/Debug/netcoreapp2.0/api.pdb
+/home/geoff/projects/newanumbers/newsnumbers/api/obj/Debug/netcoreapp2.0/api.csprojAssemblyReference.cache
+/home/geoff/projects/newanumbers/newsnumbers/api/obj/Debug/netcoreapp2.0/api.csproj.CoreCompileInputs.cache
+/home/geoff/projects/newanumbers/newsnumbers/api/obj/Debug/netcoreapp2.0/api.AssemblyInfoInputs.cache
+/home/geoff/projects/newanumbers/newsnumbers/api/obj/Debug/netcoreapp2.0/api.AssemblyInfo.cs
+/home/geoff/projects/newanumbers/newsnumbers/api/obj/Debug/netcoreapp2.0/api.dll
+/home/geoff/projects/newanumbers/newsnumbers/api/obj/Debug/netcoreapp2.0/api.pdb

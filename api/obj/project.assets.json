@@ -42,6 +42,19 @@
           }
         }
       },
+      "LiteDB/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/LiteDB.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LiteDB.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -4766,6 +4779,23 @@
         "runtimes/win-arm/native/libuv.dll",
         "runtimes/win-x64/native/libuv.dll",
         "runtimes/win-x86/native/libuv.dll"
+      ]
+    },
+    "LiteDB/4.1.2": {
+      "sha512": "lqjADPYzH9eKOJTFB9cHXhqPCHnSrgACoxsX6wxLGK1hyIRewv1HcY4TyXV/xZ0y8IjRZhVQyAvhbJUoNg/7xQ==",
+      "type": "package",
+      "path": "litedb/4.1.2",
+      "files": [
+        "lib/net35/LiteDB.dll",
+        "lib/net35/LiteDB.xml",
+        "lib/net40/LiteDB.dll",
+        "lib/net40/LiteDB.xml",
+        "lib/netstandard1.3/LiteDB.dll",
+        "lib/netstandard1.3/LiteDB.xml",
+        "lib/netstandard2.0/LiteDB.dll",
+        "lib/netstandard2.0/LiteDB.xml",
+        "litedb.4.1.2.nupkg.sha512",
+        "litedb.nuspec"
       ]
     },
     "Microsoft.ApplicationInsights/2.4.0": {
@@ -12657,6 +12687,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "LiteDB >= 4.1.2",
       "Microsoft.AspNetCore.All >= 2.0.8",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -12700,6 +12731,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "LiteDB": {
+            "target": "Package",
+            "version": "[4.1.2, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.8, )"
