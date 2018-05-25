@@ -1,0 +1,11 @@
+/home/geoff/projects/news-numbers/newsnumbers/site/bin/Debug/netcoreapp2.0/site.deps.json
+/home/geoff/projects/news-numbers/newsnumbers/site/bin/Debug/netcoreapp2.0/site.runtimeconfig.json
+/home/geoff/projects/news-numbers/newsnumbers/site/bin/Debug/netcoreapp2.0/site.runtimeconfig.dev.json
+/home/geoff/projects/news-numbers/newsnumbers/site/bin/Debug/netcoreapp2.0/site.dll
+/home/geoff/projects/news-numbers/newsnumbers/site/bin/Debug/netcoreapp2.0/site.pdb
+/home/geoff/projects/news-numbers/newsnumbers/site/obj/Debug/netcoreapp2.0/site.csprojAssemblyReference.cache
+/home/geoff/projects/news-numbers/newsnumbers/site/obj/Debug/netcoreapp2.0/site.csproj.CoreCompileInputs.cache
+/home/geoff/projects/news-numbers/newsnumbers/site/obj/Debug/netcoreapp2.0/site.AssemblyInfoInputs.cache
+/home/geoff/projects/news-numbers/newsnumbers/site/obj/Debug/netcoreapp2.0/site.AssemblyInfo.cs
+/home/geoff/projects/news-numbers/newsnumbers/site/obj/Debug/netcoreapp2.0/site.dll
+/home/geoff/projects/news-numbers/newsnumbers/site/obj/Debug/netcoreapp2.0/site.pdb

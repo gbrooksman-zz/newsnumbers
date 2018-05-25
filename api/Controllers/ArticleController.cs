@@ -5,54 +5,42 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using LiteDB;
 using api.Models;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Caching.Memory;
+using api.Managers;
+using Microsoft.Extensions.Options;
 
 namespace api.Controllers
 {
     [Route("api/[controller]")]
     public class ArticleController : Controller
     {
-         // GET api/values
-        [HttpGet]
-        public string Get()
+         private IMemoryCache _cache;
+         private ArticleManager articleMgr;
+
+        public ArticleController(IMemoryCache memoryCache, IOptions<ApiSettings> settings)
         {
-            string tmp = string.Empty;
-            int c = 0;
+            _cache = memoryCache;
+            articleMgr = new ArticleManager(_cache,settings);
+        }
 
-            using(var db = new LiteDatabase(@"NewsNumbers.db"))
-            {
-                // Get collection
-                var col = db.GetCollection<Article>("articles");
+         [HttpGet]
+         public List<Article> GetCategory(int categoryid)
+         {
+            return articleMgr.GetCategory(categoryid);
+         }
 
-                col.DropIndex("Title");
-                
-                // Create your new instance
-                var article = new Article
-                { 
-                    Body = "This is the body",
-                    Title = "The Title",
-                    CategoryId = 0,
-                    ImageURL = "http://image.com",
-                    SourceURL = "http://source.som",
-                    DateStamp = DateTime.Now,
-                    Id = Guid.NewGuid()                   
-                };
+ 
+        [HttpGet]
+        public Article GetOne(Guid guid)
+        {
+           return articleMgr.GetOne(guid);
+        }
 
-
-                col.EnsureIndex(x => x.Id, true);
-
-                col.Insert(article);
-
-                article.Title = "The New Title";
-                
-                col.Update(article);
-                
-                var results = col.Find(x => x.CategoryId  == 0);
-                tmp = results.FirstOrDefault().Title;
-
-                c = col.Count();
-            }
-
-            return c.ToString();
+        [HttpGet]
+        public List<Article> GetRecent()
+        {
+           return articleMgr.GetRecent();
         }
 
     }

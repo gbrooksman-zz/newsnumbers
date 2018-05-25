@@ -1,0 +1,11 @@
+/home/geoff/projects/news-numbers/newsnumbers/admin/bin/Debug/netcoreapp2.0/admin.deps.json
+/home/geoff/projects/news-numbers/newsnumbers/admin/bin/Debug/netcoreapp2.0/admin.runtimeconfig.json
+/home/geoff/projects/news-numbers/newsnumbers/admin/bin/Debug/netcoreapp2.0/admin.runtimeconfig.dev.json
+/home/geoff/projects/news-numbers/newsnumbers/admin/bin/Debug/netcoreapp2.0/admin.dll
+/home/geoff/projects/news-numbers/newsnumbers/admin/bin/Debug/netcoreapp2.0/admin.pdb
+/home/geoff/projects/news-numbers/newsnumbers/admin/obj/Debug/netcoreapp2.0/admin.csprojAssemblyReference.cache
+/home/geoff/projects/news-numbers/newsnumbers/admin/obj/Debug/netcoreapp2.0/admin.csproj.CoreCompileInputs.cache
+/home/geoff/projects/news-numbers/newsnumbers/admin/obj/Debug/netcoreapp2.0/admin.AssemblyInfoInputs.cache
+/home/geoff/projects/news-numbers/newsnumbers/admin/obj/Debug/netcoreapp2.0/admin.AssemblyInfo.cs
+/home/geoff/projects/news-numbers/newsnumbers/admin/obj/Debug/netcoreapp2.0/admin.dll
+/home/geoff/projects/news-numbers/newsnumbers/admin/obj/Debug/netcoreapp2.0/admin.pdb

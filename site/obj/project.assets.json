@@ -12668,11 +12668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/geoff/projects/newanumbers/newsnumbers/site/site.csproj",
+      "projectUniqueName": "/home/geoff/projects/news-numbers/newsnumbers/site/site.csproj",
       "projectName": "site",
-      "projectPath": "/home/geoff/projects/newanumbers/newsnumbers/site/site.csproj",
+      "projectPath": "/home/geoff/projects/news-numbers/newsnumbers/site/site.csproj",
       "packagesPath": "/home/geoff/.nuget/packages/",
-      "outputPath": "/home/geoff/projects/newanumbers/newsnumbers/site/obj/",
+      "outputPath": "/home/geoff/projects/news-numbers/newsnumbers/site/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
