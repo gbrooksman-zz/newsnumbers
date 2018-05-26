@@ -25,23 +25,23 @@ namespace api.Controllers
         }
 
          [HttpGet]
-         public List<Article> GetCategory(int categoryid)
+         public List<Article> GetByCategory(int categoryid)
          {
             return articleMgr.GetCategory(categoryid);
          }
 
  
         [HttpGet]
-        public Article GetOne(Guid guid)
-        {
-           return articleMgr.GetOne(guid);
+        public List<Article> GetLatest()
+        {            
+           return articleMgr.GetLatest();
         }
 
-        [HttpGet]
-        public List<Article> GetRecent()
-        {
-           return articleMgr.GetRecent();
-        }
+        // [HttpGet]
+        // public List<Article> GetRecent()
+        // {
+        //    return articleMgr.GetRecent();
+        // }
 
     }
 

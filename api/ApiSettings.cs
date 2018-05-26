@@ -9,6 +9,7 @@ namespace api
 
          public string ApplicationName { get; set; } = "News by the Numbers";
          public int RecentDaysLookback { get; set; } = 15;
+         public string DBName {get; set;} = "NewsNumbers.db";
 
     }
 

@@ -11,40 +11,46 @@ using Microsoft.Extensions.Options;
 
 namespace api.Managers
 {
-
     public class ArticleManager : BaseManager
     {
         private IMemoryCache _cache;
+        private ApiSettings _settings;
+
+        private string dbname;
         public ArticleManager(IMemoryCache memoryCache, IOptions<ApiSettings> settings) 
                                     : base(memoryCache, settings)
         {
             _cache = memoryCache;
+            _settings = settings.Value;
+            dbname = _settings.DBName;
         }
 
         public List<Article> GetCategory(int categoryid)
          {
             List<Article> articles = new  List<Article> ();
 
-            using (var db = new LiteDatabase(ConnectionString))
+            using (var db = new LiteDatabase(dbname))
             {
                 var col = db.GetCollection<Article>("articles");
 
                 articles = col.Find(a => a.CategoryId == categoryid 
-                                    && a.DateStamp > DateTime.Now.AddYears(-1)).ToList();
+                                    && a.DateStamp > DateTime.Now.AddDays(-1)).ToList();
             }
 
             return articles;
          }
 
-        public List<Article> GetRecent()
+        public List<Article> GetLatest()
          {
             List<Article> articles = new  List<Article> ();
 
-            using (var db = new LiteDatabase(ConnectionString))
+            int daysDiff = -_settings.RecentDaysLookback;
+
+            using (var db = new LiteDatabase(dbname))
             {
                 var col = db.GetCollection<Article>("articles");
 
-                articles = col.Find(a => a.DateStamp > DateTime.Now.AddDays(-7)).ToList();
+                articles = col.Find(a => a.DateStamp > DateTime.Now.AddDays(daysDiff)).ToList();
             }
 
             return articles;
@@ -59,8 +65,7 @@ namespace api.Managers
             {
                 var col = db.GetCollection<Article>("articles");
 
-                article = col.Find(a => a.Id == guid 
-                                    && a.DateStamp > DateTime.Now.AddYears(-1)).FirstOrDefault();
+                article = col.Find(a => a.Id == guid).FirstOrDefault();
             }
 
             return article;
