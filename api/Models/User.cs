@@ -22,6 +22,10 @@ namespace api.Models
 
         public int InterestCount {get; set;}
 
+        public bool IsActive  {get; set;}
+
+        public bool IsModerator {get; set;}
+
 
 
     }
